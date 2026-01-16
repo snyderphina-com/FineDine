@@ -1,0 +1,411 @@
+
+*,::before,
+*::after{
+   box-sizing: border-box;
+}
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.header{
+    min-height: 70vh;
+    width: 100%;
+    background:  rgba(0, 0, 0, 0.772) url(../foodpics/foodpic.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-blend-mode: darken;
+    right: 0;
+    margin-top: 70px;
+    
+}
+.navi{
+    display: flex;
+  flex-basis: 30%;
+    flex-direction: row;
+   justify-content: space-between;
+   position: fixed;
+  height: 70px;
+  width: 100%;
+  background:   rgb(0, 0, 0);
+  top: 0;
+z-index: 1000;
+
+}
+
+.logo{
+font-size: 30px;
+font-style: italic;
+color: rgb(2, 114, 170);
+display: flex;
+flex-direction: row;
+align-items: center;
+
+
+
+}
+ 
+.f::first-letter{
+color: rgba(230, 12, 165, 0.774);
+font-size: 50px;
+font-style: italic;
+}
+
+.nav-links ul{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap: 60px;
+    padding-top: 15px;
+  
+}
+
+.nav-links ul li{
+    list-style: none;
+
+ 
+   
+    
+}
+.nav-links ul li a{
+    background:linear-gradient(90deg, rgb(98, 203, 255),rgb(230, 12, 165, 0.774));
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 10px;
+   
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background:linear-gradient(90deg , rgb(230, 12, 165, 0.774),rgb(2, 114, 170)) ;
+    margin: auto;
+    transition: 0.9s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+
+   
+}
+#bar:hover{
+    transform: rotate(-90deg);
+}
+.textbox{
+    width:60%;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.textbox h1{
+    font-size: 50px;
+}
+.herobtn{
+    display: inline-block;
+    text-decoration:none ;
+    color:#fff  ;
+    border: 1px #fff solid;
+    padding: 12px 34px;
+    font-size: 13px;
+    top: 40px;
+    position:relative;
+    background:transparent ;
+    cursor: pointer;
+    transition:transform 1900ms;
+}
+.herobtn:hover{
+     background:linear-gradient(90deg , rgba(230, 12, 165, 0.286),rgba(2, 114, 170, 0.229)) ;
+transform: scale(1.1);
+    }
+    #bar{
+        display: none;
+    }
+
+    @media(max-width:700px){
+h1{
+    font-size: 20px;
+}
+p{
+    font-size: 12px;
+}
+.nav-links ul {
+    display:flex ;
+    flex-direction: column;
+    width: max-content;
+    padding: 10px;
+    gap: 15px;
+    padding-top: 40px;
+  
+}
+.nav-links ul li{
+    width: max-content;
+}
+
+.nav-links {
+    position: fixed;
+    background: linear-gradient(45deg ,rgb(182, 14, 131),rgb(8, 84, 122)) ;
+    height:100vh;
+    width: 150px; ;
+    top: 0;
+    right:-200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+
+#bar{
+    
+    background:linear-gradient(90deg, rgb(2, 114, 170),rgb(230, 12, 165));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 27px;
+    display: block;
+    cursor: pointer;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+
+}
+
+}
+
+.foods{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.foods p{
+color: #777;
+}
+.row{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.foodcol{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius:10px ;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+h3{
+    text-align:center ;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.foodcol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+ @media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+ }
+ .hotel{
+width:80% ;
+margin: auto;
+text-align: center;
+padding-top:50px ;
+
+
+ }
+ .hotel p{
+    color:#777;
+ }
+ .hotelcol{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+     display: flex;
+ 
+  
+ }
+ .hotelcol img{
+    width: 100%;
+    
+ }
+ .layer{
+background: transparent;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+transition: 1s;
+ }
+ .layer:hover{
+background: rgba(0,0,0,0.5)
+
+
+ }
+ .layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #ffe6e6;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+ }
+ .layer:hover h3{
+    opacity: 1;
+    bottom: 49%;
+ } 
+ .services{
+width:80% ;
+margin: auto;
+text-align: center;
+padding-top:50px ;
+
+
+ }
+ .services p{
+    color: #777;
+ }
+ .servicecol{
+   
+   flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+ }
+ .servicecol img{
+    width: 100%;
+    border-radius: 10px;
+ }
+.servicecol p{
+    padding: 0;
+    color: #777;
+}
+.servicecol h3{
+    margin-top:16px ;
+    margin-bottom:15px ;
+    text-align:left ;
+}
+.testimony{
+  width:80% ;
+margin: auto;
+text-align: center;
+padding-top:50px ;  
+
+}
+.testimony p{
+    color: #777;
+}
+.testimonycol{
+ 
+    border-radius:10px ;
+    margin-bottom:5% ;
+    text-align: left;
+    background:#fff3f3 ;
+    padding: 25px;
+    cursor:pointer ;
+   position: relative;
+   display: flex;
+   
+   
+}
+.testimonycol img{
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 30px;
+border-radius: 50%;
+}
+.testimonycol p{
+    padding: 0;
+    font-size: 12px;
+    color: #777;
+
+}
+.testimonycol h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonycol i{
+      background:linear-gradient(90deg, rgb(2, 114, 170),rgb(230, 12, 165, 0.774));
+    -webkit-background-clip: text;
+    color: transparent;
+    
+    font-size: 13px;
+}
+@media(max-width:700px){
+     .testimonycol img{
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.cta{
+    font-size: 20px;
+}
+}
+.cta{
+margin: 100px auto;
+width:80% ;
+background: rgba(0, 0,0, 0.7) url(../foodpics/cta1.jpeg) ;
+background-blend-mode: darken;
+background-position: center;
+background-size: cover;
+border-radius:10px ;
+text-align:center ;
+padding:100px 0 ;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.footer{
+    width:100% ;
+    text-align:center ;
+    padding:30px 0 ;
+}
+.footer h4{
+    font-weight: 800;
+}
+.footer i{
+    background:linear-gradient(90deg, rgb(2, 114, 170),rgb(230, 12, 165, 0.774));
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+   transition: 1s;
+   
+}
+.footer i:hover{
+   transform: scale(1.2);
+    
+   
+}
+.footer .fa-heart{
+     background:linear-gradient(90deg, rgb(2, 114, 170),rgb(230, 12, 165, 0.774));
+    -webkit-background-clip: text;
+    color: transparent;
+      margin: 0 0;
+    cursor: pointer;
+    padding: 0 0;
+}
+.brands{
+display: inline-block;
+border-radius: 50%;
+  border: 1px solid transparent;
+  background: linear-gradient(#ffffff,#ffffff) padding-box,
+  linear-gradient(40deg,rgb(230, 12, 165, 0.774),rgb(2, 114, 170)) border-box;
+
+}

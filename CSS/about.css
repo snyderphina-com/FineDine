@@ -1,0 +1,178 @@
+   
+   
+
+   
+   .subheader{
+    height: 50vh;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.772) url(../foodpics/about.jpeg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+  
+    text-align: center;
+    color: #fff;
+
+}
+@media (max-width:700px){
+    .subheader h1{
+        font-size: 20px;
+    }
+}
+
+.subheader h1{
+padding-top: 200px;
+}
+.aboutus{
+    width: 80%;
+    margin: auto;
+    padding-top:80px ;
+    padding-bottom: 50px;
+}
+.aboutcol{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.aboutcol img{
+    width: 100%;
+}
+.aboutcol h1{
+    padding: 0;
+}
+.aboutcol p{
+    padding: 15px 0 25px;
+}
+
+.abt{
+    display: inline-block;
+    text-decoration:none ;
+    color: rgb(173, 22, 123) ;
+    border: 1px rgb(16, 93, 132) solid;
+    border-radius: 7px;
+    padding: 12px 34px;
+    font-size: 13px;
+    top: 40px;
+    position:relative;
+    background:transparent ;
+    cursor: pointer;
+    transition:transform 1900ms;
+}
+.abt:hover{
+     background:linear-gradient(90deg , rgba(230, 12, 165, 0.286),rgba(2, 114, 170, 0.229)) ;
+transform: scale(1.1);
+    }
+
+
+    .blogcontent{
+       width: 80%; 
+       margin: auto;
+       padding: 60px 0;
+    }
+    .blogleft{
+        flex-basis: 40%;
+    }
+.blogleft img{
+   width:100% ; 
+}
+.blogleft h2{
+    color: #222;
+    font-weight:600 ;
+    margin: 30px 0;
+
+}
+.blogleft p{
+    color: #999;
+    padding: 0;
+}
+
+  .blogright{
+        flex-basis: 50%;
+    }
+.blogright img{
+   width:100% ; 
+}
+.blogright h2{
+    color: #222;
+    font-weight:600 ;
+    margin: 30px 0;
+
+}
+
+.blogright p{
+    color: #999;
+    padding: 0;
+}
+.commentbox{
+    border: 1px solid#ccc;
+    margin:50px 0 ;
+    padding: 10px 20px;
+}
+.commentbox h3{
+    text-align: left;
+}
+.commentform input, .commentform textarea{
+    width:100% ;
+    padding:10px ;
+    margin: 15px 0; 
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background: #f0f0f0;
+}
+.commentform button{
+    margin: 10px 0;
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+.contactus{
+    width: 80%;
+    margin: auto;
+}
+.contactcol{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contactcol div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contactcol div i{
+    font-size:20px;
+       background:linear-gradient(90deg, rgb(2, 114, 170),rgb(230, 12, 165, 0.774));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin:10px ;
+    margin-right: 30px;
+    
+}
+
+.contactcol div p{
+    padding: 0;
+}
+
+.contactcol div h5{
+    font-size:17px ;
+    margin-bottom:5px ;
+    font-weight:400 ;
+    color:#555 ;
+}
+
+.contactcol input,.contactcol textarea{
+    width:100% ;
+    padding: 15px;
+    margin-bottom:17px ;
+    outline: none;
+    border:1px solid #ccc ;
+    box-sizing: border-box;
+}
+
+
